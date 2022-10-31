@@ -59,7 +59,7 @@ async function run() {
             console.log(result);
         })
 
-        //Update single product from client side (CRUD er Update Operation)
+        //Update single product from client side.. It will also update on the server side (CRUD er Update Operation)
         app.get('/products/:id', async (req, res) => {
             const id = req.params.id;
             const query = {_id: ObjectId(id)};
